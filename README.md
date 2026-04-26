@@ -94,10 +94,9 @@ Security Group Rules:
 
 > RDS was intentionally created after the EC2 instance and kept separate to ensure the database runs on a dedicated managed MySQL server — not on the application server.
 
-![RDS Database Creation page](docs/screenshots/screenshots(3).png)
+![RDS Database Creation page](docs/screenshots/screenshot(3).png)
 
-![RDS instance Available status](docs/screenshots/fig4-rds-available.png)
----
+![RDS instance Available status](docs/screenshots/screenshot(4).png)
 
 ### Step 3 — Set Up LAMP Stack on EC2
 
@@ -133,7 +132,7 @@ sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
 ```
 
-> Screenshot: Terminal output showing successful download, extraction of PrestaShop files, and permission assignment.
+![Database connection error](docs/screenshots/screenshot(5).png)
 
 ---
 
@@ -164,9 +163,10 @@ GRANT ALL PRIVILEGES ON `prestashop`. TO 'admin'@'%';
 FLUSH PRIVILEGES;
 ```
 
-> Screenshot: PrestaShop installer showing the database connection error message with the "Attempt to create the database automatically" prompt.
 
-> Screenshot: PrestaShop Installation Assistant at 10% progress — "Create database tables..." — confirming successful connection and table creation.
+
+![Database connection error](docs/screenshots/screenshot(6).png)
+
 
 ---
 
@@ -177,6 +177,9 @@ After installation completed, the `/install` directory was removed to prevent un
 ```bash
 sudo rm -rf install
 ```
+
+
+
 
 > Screenshot: PrestaShop security warning page requiring deletion of `/install` folder before Back Office access is permitted.
 
@@ -190,7 +193,7 @@ sudo rm -rf install
 - ✅ Database running on dedicated RDS instance (separate from EC2)
 - ✅ All AWS resources remained within Free Tier limits
 
-> Screenshot: Live PrestaShop homepage showing the Cyber-Testing store front-end with product categories (Clothes, Accessories, Art) and featured products.
+
 
 ---
 
