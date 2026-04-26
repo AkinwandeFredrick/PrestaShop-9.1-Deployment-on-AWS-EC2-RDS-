@@ -71,10 +71,12 @@ Security Group Rules:
 | HTTP | TCP | 80 | 0.0.0.0/0 |
 | HTTPS | TCP | 443 | 0.0.0.0/0 |
 
-![Alt text](docs/screenshots/Screenshot (1).png)
+![EC2 Launch Instance summary page](docs/screenshots/screenshot(1).png)
 
 
-> Screenshot: EC2 instance in "Running" state with Public IPv4 DNS: `ec2-13-49-228-209.eu-north-1.compute.amazonaws.com`
+
+
+![EC2 instance in Running state](docs/screenshots/screenshot(2).png): `ec2-13-49-228-209.eu-north-1.compute.amazonaws.com`
 
 ---
 
@@ -92,10 +94,9 @@ Security Group Rules:
 
 > RDS was intentionally created after the EC2 instance and kept separate to ensure the database runs on a dedicated managed MySQL server — not on the application server.
 
-> Screenshot: RDS Database Creation page showing Single-AZ deployment selection.
+![RDS Database Creation page](docs/screenshots/screenshots(3).png)
 
-> Screenshot: RDS `prestashop-db` instance in "Available" status with endpoint, VPC, and security group details visible.
-
+![RDS instance Available status](docs/screenshots/fig4-rds-available.png)
 ---
 
 ### Step 3 — Set Up LAMP Stack on EC2
