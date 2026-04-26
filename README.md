@@ -71,7 +71,7 @@ Security Group Rules:
 | HTTP | TCP | 80 | 0.0.0.0/0 |
 | HTTPS | TCP | 443 | 0.0.0.0/0 |
 
-> Screenshot: EC2 "Launch Instance" summary page showing Ubuntu 22.04, t3.micro, and security group `prestashop-ec2-sg`.
+![Alt text](docs/screenshots/Screenshot (1).png)
 
 
 > Screenshot: EC2 instance in "Running" state with Public IPv4 DNS: `ec2-13-49-228-209.eu-north-1.compute.amazonaws.com`
