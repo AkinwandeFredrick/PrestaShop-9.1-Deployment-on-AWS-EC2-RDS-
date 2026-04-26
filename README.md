@@ -71,12 +71,12 @@ Security Group Rules:
 | HTTP | TCP | 80 | 0.0.0.0/0 |
 | HTTPS | TCP | 443 | 0.0.0.0/0 |
 
-![EC2 Launch Instance summary page](docs/screenshots/screenshot(1).png)
+![EC2 Launch Instance summary page](docs/screenshots/Screenshot%20(1).png)
 
 
 
 
-![EC2 instance in Running state](docs/screenshots/screenshot(2).png): `ec2-13-49-228-209.eu-north-1.compute.amazonaws.com`
+![EC2 instance in Running state](docs/screenshots/Screenshot%20(2).png): `ec2-13-49-228-209.eu-north-1.compute.amazonaws.com`
 
 ---
 
@@ -94,9 +94,9 @@ Security Group Rules:
 
 > RDS was intentionally created after the EC2 instance and kept separate to ensure the database runs on a dedicated managed MySQL server — not on the application server.
 
-![RDS Database Creation page](docs/screenshots/screenshot(3).png)
+![RDS Database Creation page](docs/screenshots/Screenshot%20.png)
 
-![RDS instance Available status](docs/screenshots/screenshot(4).png)
+![RDS instance Available status](docs/screenshots/Screenshot%20.png)
 
 ### Step 3 — Set Up LAMP Stack on EC2
 
@@ -132,7 +132,7 @@ sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
 ```
 
-![Database connection error](docs/screenshots/screenshot(5).png)
+![Database connection error](docs/screenshots/Screenshot%20.png)
 
 ---
 
@@ -165,7 +165,7 @@ FLUSH PRIVILEGES;
 
 
 
-![Database connection error](docs/screenshots/screenshot(6).png)
+![Database connection error](docs/screenshots/Screenshot%20.png)
 
 
 ---
