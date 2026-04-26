@@ -8,7 +8,7 @@
 
 | Resource | URL |
 |---|---|
-| Store Front-end | [https://ec2-13-49-228-209.eu-north-1.compute.amazonaws.com/](https://ec2-13-49-228-209.eu-north-1.compute.amazonaws.com/) |
+| Store Front-end | [https://ec2-13-49-228-209.eu-north-1.compute.amazonaws.com/](http://ec2-13-49-228-209.eu-north-1.compute.amazonaws.com/) |
 
 
 > Store Name: Cyber-Testing  
@@ -217,8 +217,7 @@ The store is now live, publicly accessible, and fully operational within AWS Fre
 ├── docs/
 │   ├── screenshots/        ← All referenced screenshots (Figures 1–10)
 │   └── architecture.png    ← Architecture diagram export
-└── config/
-    └── security-group.md   ← Security group rules reference
+
 ```
 
 ---
