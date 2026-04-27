@@ -1,10 +1,10 @@
-# 🛒 PrestaShop 9.1 Deployment on AWS (EC2 + RDS)
+#  PrestaShop 9.1 Deployment on AWS (EC2 + RDS)
 
 > A fully functional e-commerce store deployed on AWS Free Tier using Amazon EC2 as the web/application server and Amazon RDS MySQL as a dedicated, separate database instance.
 
 ---
 
-## 🌐 Live URLs
+## Live URLs
 
 | Resource | URL |
 |---|---|
@@ -16,7 +16,7 @@
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 
 <p align="center">
@@ -28,7 +28,7 @@ Key design decision: The database runs on a dedicated RDS managed instance, comp
 
 ---
 
-## 📋 Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |---|---|
@@ -42,7 +42,7 @@ Key design decision: The database runs on a dedicated RDS managed instance, comp
 
 ---
 
-## 🚀 Implementation Steps
+## Implementation Steps
 
 ### Step 1 — Launch EC2 Instance
 
@@ -137,7 +137,7 @@ Database Configuration (where EC2 and RDS are joined):
 | Database login | `admin` |
 | Tables prefix | `ps_` |
 
-#### ⚠️ Issue Encountered & Resolution
+####  Issue Encountered & Resolution
 
 Error: `Connection to MySQL server succeeded, but database 'prestashop' not found`
 
@@ -173,29 +173,13 @@ sudo rm -rf install
 
 > Screenshot: PrestaShop Back Office (Admin Dashboard) fully accessible after the `/install` folder was deleted — showing store dashboard with sales forecast chart.
 
----
 
-### Step 6 — Final Verification
-
-- ✅ Live store accessible and functional at the public URL
-- ✅ Database running on dedicated RDS instance (separate from EC2)
-- ✅ All AWS resources remained within Free Tier limits
 
 
 
 ---
 
-## ✅ Outcome
 
-PrestaShop 9.1 was successfully deployed by:
-
-1. Launching the EC2 instance first
-2. Creating the RDS MySQL database second (separate hosting)
-3. Connecting them during the PrestaShop web installer
-
-The store is now live, publicly accessible, and fully operational within AWS Free Tier constraints.
-
----
 
 ## 📁 Repository Structure
 
@@ -210,7 +194,7 @@ The store is now live, publicly accessible, and fully operational within AWS Fre
 
 ---
 
-## 📝 Notes
+## Notes
 
 - SSH access is restricted to the deployer's IP address only for security.
 - The `/install` folder has been permanently deleted post-deployment.
