@@ -220,4 +220,4 @@ The store is now live, publicly accessible, and fully operational within AWS Fre
 
 ---
 
-Deployed on AWS Free Tier — eu-north-1 (Stockholm)
+Deployed on AWS Free Tier — eu-north-1
