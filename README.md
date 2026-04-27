@@ -19,21 +19,9 @@
 ## 🏗️ Architecture Overview
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                        AWS (eu-north-1)                     │
-│                                                             │
-│   ┌─────────────────────────┐    ┌──────────────────────┐  │
-│   │      EC2 Instance        │    │    RDS Instance      │  │
-│   │  (prestashop-app)        │    │  (prestashop-db)     │  │
-│   │                          │    │                      │  │
-│   │  Ubuntu 22.04 LTS        │───▶│  MySQL (latest)      │  │
-│   │  t3.micro (Free Tier)    │    │  db.t3.micro         │  │
-│   │                          │    │  20 GiB gp2          │  │
-│   │  Apache 2  + PHP 8.3     │    │                      │  │
-│   │  PrestaShop 9.1.0        │    │  Port: 3306          │  │
-│   └─────────────────────────┘    └──────────────────────┘  │
-│          Public IPv4: 13.49.228.209          Same VPC       │
-└─────────────────────────────────────────────────────────────┘
+<p align="center">
+  <img src="docs/architecture.png" alt="AWS Architecture Diagram - PrestaShop on EC2 + RDS" />
+</p>
 ```
 
 Key design decision: The database runs on a dedicated RDS managed instance, completely separate from the EC2 application server. This follows best practices for separation of concerns, scalability, and managed backup/maintenance.
