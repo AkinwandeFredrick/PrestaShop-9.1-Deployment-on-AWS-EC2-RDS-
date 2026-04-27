@@ -18,11 +18,11 @@
 
 ## 🏗️ Architecture Overview
 
-```
+
 <p align="center">
   <img src="docs/architecture.png" alt="AWS Architecture Diagram - PrestaShop on EC2 + RDS" />
 </p>
-```
+
 
 Key design decision: The database runs on a dedicated RDS managed instance, completely separate from the EC2 application server. This follows best practices for separation of concerns, scalability, and managed backup/maintenance.
 
