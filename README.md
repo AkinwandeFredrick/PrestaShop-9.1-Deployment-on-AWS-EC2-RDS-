@@ -169,11 +169,6 @@ sudo rm -rf install
 
 
 
-> Screenshot: PrestaShop security warning page requiring deletion of `/install` folder before Back Office access is permitted.
-
-> Screenshot: PrestaShop Back Office (Admin Dashboard) fully accessible after the `/install` folder was deleted — showing store dashboard with sales forecast chart.
-
-
 
 
 
